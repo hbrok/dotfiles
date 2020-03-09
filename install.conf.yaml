@@ -1,0 +1,22 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.gitconfig: git/.gitconfig
+    ~/.gitignore_global: git/.gitignore_global
+    ~/.zshenv: zsh/.zshenv
+    ~/.zprofile: zsh/.zprofile
+    ~/.zshrc: zsh/.zshrc
+    ~/.zpreztorc: zsh/.zpreztorc
+    ~/.zprezto: prezto/
+
+- create:
+    - ~/Sites
+    - ~/Projects
+    - ~/Screenshots
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
