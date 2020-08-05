@@ -1,6 +1,9 @@
 - defaults:
     link:
-      relink: true
+        relink: true
+    shell:
+        std: true    
+        stderr: true    
 
 - clean: ['~']
 
@@ -10,8 +13,8 @@
     ~/.zshenv: zsh/.zshenv
     ~/.zprofile: zsh/.zprofile
     ~/.zshrc: zsh/.zshrc
-    ~/.zpreztorc: zsh/.zpreztorc
-    ~/.zprezto: prezto/
+    ~/.zsh_aliases: zsh/.zsh_aliases
+    ~/.wp-cli/config.yml: wp-cli/config.yml
 
 - create:
     - ~/Sites
@@ -19,4 +22,9 @@
     - ~/Screenshots
 
 - shell:
-  - [git submodule update --init --recursive, Installing submodules]
+    - [git submodule update --init --recursive, Installing submodules]
+    # - [bash ./brew/install.sh, Installing Homebrew and required packages]
+    # - [bash ./node/install.sh, Installing NodeJS and required packages]
+    # - [bash ./valet/install.sh, Installing Valet]
+    # - [git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto", Installing Prezto]
+    # - [code --install-extension Shan.code-settings-sync, Installing VSCode Setting Sync Extension]

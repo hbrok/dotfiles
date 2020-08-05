@@ -11,5 +11,10 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
-export PATH="$PATH:$HOME/.yarn/bin"
 export PATH="$PATH:$HOME/.composer/vendor/bin"
+
+# Init nodenv
+eval "$(nodenv init -)"
+
+# Include aliases
+. ~/.zsh_aliases

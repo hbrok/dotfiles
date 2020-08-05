@@ -1,0 +1,17 @@
+# Shortcuts
+alias phpstorm='open -a /Applications/PhpStorm.app "`pwd`"'
+
+# Directories
+alias dotfiles="cd $DOTFILES"
+alias library="cd $HOME/Library"
+alias sites="cd $HOME/Sites"
+
+# JS
+alias nfresh="rm -rf node_modules/ package-lock.json && npm install"
+
+# Git
+alias gst="git status"
+alias gb="git branch"
+alias gc="git checkout"
+alias gl="git log --oneline --decorate --color"
+alias wip="git add . && git commit -m wip"

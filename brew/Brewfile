@@ -1,0 +1,48 @@
+# Taps
+tap "homebrew/cask"
+tap "homebrew/core"
+tap "homebrew/services"
+
+# Development
+brew "mailhog", restart_service: true
+brew "php", restart_service: true
+brew "php@7.4"
+brew "composer"
+brew "imagemagick"
+brew "mysql@5.7", restart_service: true
+brew "nginx"
+brew "nodenv"
+brew "wp-cli"
+brew "zsh-completions"
+
+# Apps
+cask "1password"
+cask "firefox"
+cask "google-chrome"
+cask "imageoptim"
+cask "sequel-pro"
+cask "sublime-text"
+cask "visual-studio-code"
+cask "duet"
+cask "spotify"
+cask "the-unarchiver"
+# cask "affinity-photo"
+
+# Apps - Work
+cask "zoomus"
+cask "postman"
+cask "slack"
+cask "phpstorm"
+cask "adoptopenjdk"
+cask "screaming-frog-seo-spider"
+
+# Apps - Personal
+cask "steam"
+cask "backblaze"
+cask "discord"
+cask "malwarebytes"
+cask "mullvadvpn"
+cask "sketch"
+
+# Fonts
+cask 'font-fira-code'

@@ -1,0 +1,28 @@
+# Sets defaults for WP-CLI commands.
+# Put this at ~/.wp-cli/config.yml to set these parameters globally
+# See: https://make.wordpress.org/cli/handbook/config/#config-files
+ 
+# Subcommand defaults (e.g. `wp config create`)
+scaffold post-type:
+    plugin: vi-site-functionality
+
+scaffold taxonomy:
+    plugin: vi-site-functionality
+
+user create:
+    user-login: admin
+    user-email: heather@example.com
+    --role: administrator
+    --user-pass: user-pass
+    --send-email: n
+
+config create:
+    dbuser: root
+    dbpass: 
+    extra-php: |
+        define( 'WP_DEBUG', true );
+        define( 'WP_POST_REVISIONS', 50 );
+
+# '_' is a special value denoting configuration options for this wp-cli.yml
+_:
+    merge: true
