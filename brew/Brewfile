@@ -15,6 +15,9 @@ brew "nodenv"
 brew "wp-cli"
 brew "zsh-completions"
 
+# Tools
+brew "jakehilborn/jakehilborn/displayplacer"
+
 # Apps
 cask "1password"
 cask "firefox"

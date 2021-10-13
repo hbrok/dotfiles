@@ -15,3 +15,7 @@ alias gb="git branch"
 alias gc="git checkout"
 alias gl="git log --oneline --decorate --color"
 alias wip="git add . && git commit -m wip"
+
+# Rearrange displays if they're not right
+alias swd1='displayplacer "id:9A7D1D8B-3CF1-7626-9CAE-CD4B2F794C8B res:1920x1080 hz:60 color_depth:4 scaling:off origin:(0,0) degree:0" "id:445D6B13-A52A-BA44-EF6D-F21490A76551 res:1920x1080 hz:60 color_depth:4 scaling:off origin:(1920,0) degree:0"'
+alias swd2='displayplacer "id:445D6B13-A52A-BA44-EF6D-F21490A76551 res:1920x1080 hz:60 color_depth:4 scaling:off origin:(0,0) degree:0" "id:9A7D1D8B-3CF1-7626-9CAE-CD4B2F794C8B res:1920x1080 hz:60 color_depth:4 scaling:off origin:(1920,0) degree:0"'
