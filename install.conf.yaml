@@ -12,6 +12,7 @@
     ~/.gitignore_global: git/.gitignore_global
     ~/.zshenv: zsh/.zshenv
     ~/.zprofile: zsh/.zprofile
+    ~/.zpreztorc: zsh/.zpreztorc
     ~/.zshrc: zsh/.zshrc
     ~/.zsh_aliases: zsh/.zsh_aliases
     ~/.wp-cli/config.yml: wp-cli/config.yml
