@@ -16,6 +16,10 @@ Dotfiles managed with [dotbot](https://github.com/anishathalye/dotbot)
 
        git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
 
+## Migrate databases
+1. Export: `mysqldump -u root -p --all-databases > all_databases.sql`
+2. Import: `mysql -u root -p < all_databases.sql`
+
 ## Before you re-install
 
 - Did you commit and push any changes/branches to your git repositories?

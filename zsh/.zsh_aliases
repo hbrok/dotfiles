@@ -2,9 +2,10 @@
 alias phpstorm='open -a /Applications/PhpStorm.app "`pwd`"'
 
 # Directories
-alias dotfiles="cd $DOTFILES"
+alias dotfiles="cd ~/.dotfiles"
 alias library="cd $HOME/Library"
 alias sites="cd $HOME/Sites"
+alias projects="cd $HOME/Projects"
 
 # JS
 alias nfresh="rm -rf node_modules/ package-lock.json && npm install"
